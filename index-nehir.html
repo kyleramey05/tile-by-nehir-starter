@@ -7,13 +7,24 @@
 
     <!-- 📌 Add the Bootstrap 5 CDN here when ready -->
     <!-- Example: <link href="..." rel="stylesheet"> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body
+    style="
+      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+      min-height: 100vh;
+    "
+  >
     <!-- Main container for your layout -->
     <div class="container py-5">
       <!-- Heading styled with Playfair Display font and centered -->
@@ -39,5 +50,104 @@
          - Add .img-fluid and .border-tile
          - Use AI to improve layout or spacing
     --></div>
+
+    <header class="mb-4">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background: #4f46e5">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">LiveLab Launcher</a>
+        </div>
+      </nav>
+    </header>
+    <section
+      class="py-5 text-center text-white"
+      style="
+        background: linear-gradient(120deg, #6366f1 60%, #818cf8 100%);
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+      "
+    >
+      <div class="container">
+        <h1 class="display-4 mb-3">👋 Welcome to LiveLab 5</h1>
+        <p class="lead mb-4">
+          Preview interactive web projects and explore creative coding demos.
+        </p>
+        <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+          <a
+            href="/index-nehir.html"
+            target="_blank"
+            class="btn btn-light btn-lg fw-semibold"
+          >
+            🖼️ Tile by Nehir Starter
+          </a>
+          <a
+            href="/level-up-parallax/index-parallax.html"
+            target="_blank"
+            class="btn btn-outline-light btn-lg fw-semibold"
+          >
+            🌀 Parallax Level-Up
+          </a>
+        </div>
+      </div>
+    </section>
+    <main>
+      <div class="container">
+        <h2 class="mb-4 text-center text-primary">Project Previews</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <img
+                src="assets/tile1.jpg"
+                class="card-img-top"
+                alt="Tile 1 Preview"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tile 1</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <img
+                src="assets/tile2.jpg"
+                class="card-img-top"
+                alt="Tile 2 Preview"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tile 2</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <img
+                src="assets/tile3.jpg"
+                class="card-img-top"
+                alt="Tile 3 Preview"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tile 3</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <img
+                src="assets/tile4.jpg"
+                class="card-img-top"
+                alt="Tile 4 Preview"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tile 4</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
